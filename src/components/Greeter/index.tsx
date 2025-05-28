@@ -14,6 +14,7 @@ function Greeter() {
       if (!res.ok) {
         setError(data.error || "Error desconocido");
       } else {
+        console.log(data);
         setError("");
       }
     } catch (err) {
